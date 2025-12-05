@@ -41,10 +41,12 @@ export default function LoginPage() {
     <div className="min-h-screen flex items-center justify-center p-4">
       <div className="w-full max-w-md">
         {/* Logo and Title */}
-        <div className="text-center mb-8">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-600 rounded-full mb-4 shadow-lg">
-            <Leaf className="w-8 h-8 text-white" />
-          </div>
+        <div className="text-center flex flex-col items-center mb-8">
+          <img
+            src="/images/logo-wb.png"
+            alt=""
+            className="w-24 h-24 mb-4"
+          />
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
             Dilan Garlands
           </h1>
@@ -54,7 +56,7 @@ export default function LoginPage() {
         {/* Login Card */}
         <div className="card">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Sign In</h2>
-          
+
           <form onSubmit={handleSubmit} className="space-y-5">
             {/* Username */}
             <div>
@@ -103,16 +105,11 @@ export default function LoginPage() {
           </form>
 
           {/* Info */}
-          <div className="mt-6 p-4 bg-primary-50 rounded-lg border border-primary-200">
-            <p className="text-sm text-primary-800">
-              <strong>Note:</strong> Please contact your administrator if you need access.
-            </p>
-          </div>
         </div>
 
         {/* Footer */}
         <p className="text-center text-sm text-gray-600 mt-6">
-          © 2024 Dilan Garlands. All rights reserved.
+          © {new Date().getFullYear()} Dilan Garlands. All rights reserved.
         </p>
       </div>
     </div>
