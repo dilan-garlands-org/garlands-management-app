@@ -331,7 +331,7 @@ export default function DashboardPage() {
         </div>
 
         {/* Table */}
-        <div className="card overflow-x-auto">
+        <div className="card overflow-x-auto max-h-[500px] overflow-y-auto">
           <table className="w-full min-w-max">
             <thead className="bg-primary-600 text-white">
               <tr>
